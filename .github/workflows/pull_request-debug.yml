@@ -7,5 +7,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: mheap/github-action-explore-debug@master
-        with:
-          jq_selector: ".pull_request"
