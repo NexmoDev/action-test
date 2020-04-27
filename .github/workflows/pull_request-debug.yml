@@ -1,5 +1,7 @@
 name: Debug
 on:
+  issue_comment:
+    types: [created]
   pull_request:
     types: [opened, synchronize, closed, labeled, unlabeled]
 jobs:
