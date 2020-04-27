@@ -10,4 +10,4 @@ jobs:
     steps:
       - uses: mheap/github-action-issue-management@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
