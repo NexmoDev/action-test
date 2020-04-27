@@ -1,8 +1,7 @@
 name: Debug
 on:
-  push: {}
   pull_request:
-    types: [opened, synchronize, closed]
+    types: [opened, synchronize, closed, labeled, unlabeled]
 jobs:
   output-debug:
     runs-on: ubuntu-latest
