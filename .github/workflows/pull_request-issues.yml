@@ -1,0 +1,11 @@
+name: Issue Management
+on:
+  pull_request:
+    types: [opened, synchronize, closed, labeled, unlabeled]
+  issue_comment:
+    types: [created]
+jobs:
+  issue-management:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mheap/github-action-issue-management@master
