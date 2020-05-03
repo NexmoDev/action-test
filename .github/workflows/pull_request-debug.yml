@@ -1,11 +1,11 @@
 name: Debug
 on:
-  issue_comment:
-    types: [created]
   pull_request:
-    types: [opened, synchronize, closed, labeled, unlabeled]
+    types: [opened, synchronize, closed]
 jobs:
   output-debug:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - uses: mheap/github-action-explore-debug@master
+        with:
+          jq_selector: ".pull_request"
