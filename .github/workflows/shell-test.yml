@@ -1,0 +1,7 @@
+name: Shell Script Test
+on: push
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Script with no name set"
