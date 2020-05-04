@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: ./issue-management
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
