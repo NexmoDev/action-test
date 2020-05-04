@@ -1,7 +1,9 @@
 name: Issue Management
 on:
   pull_request:
-    types: [opened, synchronize, closed]
+    types: [opened, closed, review_requested]
+  pull_request_review:
+    types: [submitted]
   issues:
     types: [opened, closed, reopened]
   issue_comment:
