@@ -3,13 +3,13 @@ on:
   pull_request:
     types: [opened, synchronize, closed]
   issues:
-    types: [opened, closed]
+    types: [opened, closed, reopened]
   issue_comment:
     types: [created]
 jobs:
   issue-management:
     runs-on: ubuntu-latest
     steps:
-      - uses: mheap/github-action-issue-management@master
+      - uses: ./issue-management
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
