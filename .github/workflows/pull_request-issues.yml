@@ -10,6 +10,6 @@ jobs:
   issue-management:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./issue-management
+      - uses: mheap/github-action-issue-management@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
